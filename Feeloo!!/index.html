@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="logo">Feelo 💙</h1>
+        <p class="tagline">A safe space where strangers listen without judgment</p>
+
+        <div class="card">
+            <div class="options">
+                <button class="btn express" onclick="showExpress()">Express 💬</button>
+                <button class="btn listen" onclick="showListen()">Listen 👂</button>
+            </div>
+
+            <div id="express-section" class="hidden fade">
+                <h2>Share your feelings</h2>
+                <textarea id="feelingInput" placeholder="What's on your mind?"></textarea>
+                <button class="submit-btn" onclick="submitFeeling()">Send 💙</button>
+            </div>
+
+            <div id="listen-section" class="hidden fade">
+                <h2>Listen to someone</h2>
+                <button class="submit-btn" onclick="loadFeelings()">Load stories</button>
+                <ul id="feelingsList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
